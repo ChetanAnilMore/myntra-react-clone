@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/myntra-react-clone",
     element: <App />,
     children: [
       {
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>
-  <Provider store={myntraStore}>
+  <Provider basename="/myntra-react-clone" store={myntraStore}>
     <RouterProvider router={router} />
   </Provider>
   // </React.StrictMode>
